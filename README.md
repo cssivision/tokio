@@ -1,7 +1,9 @@
-# tokio
+# Tokio
 
-A work-in-progress rearchitecting of the [tokio-core] crate in line with
-[tokio-rs/tokio-rfcs#3][rfc]
+A library for writing fast I/O applications with Rust.
+
+**Note**: This is a work-in-progress iteration of the [tokio-core] crate in line
+with [tokio-rs/tokio-rfcs#3][rfc].
 
 [tokio-core]: https://github.com/tokio-rs/tokio-core
 [rfc]: https://github.com/tokio-rs/tokio-rfcs/pull/3
