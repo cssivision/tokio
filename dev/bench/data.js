@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606638620592,
+  "lastUpdate": 1606638625509,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -205,6 +205,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19381920,
             "range": "± 2877104",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "github@max.sharnoff.org",
+            "name": "Max Sharnoff",
+            "username": "sharnoff"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0acd06b42a9d1461302388f2a533e86d391d6040",
+          "message": "runtime: fix shutdown_timeout(0) blocking (#3174)",
+          "timestamp": "2020-11-28T19:31:13+01:00",
+          "tree_id": "c17e5d58e10ee419e492cb831843c3f08e1f66d8",
+          "url": "https://github.com/cssivision/tokio/commit/0acd06b42a9d1461302388f2a533e86d391d6040"
+        },
+        "date": 1606638623262,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 185787,
+            "range": "± 50000",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 700459,
+            "range": "± 89498",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4345628,
+            "range": "± 448691",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19177952,
+            "range": "± 2267863",
             "unit": "ns/iter"
           }
         ]
