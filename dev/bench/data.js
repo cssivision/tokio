@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1606790249877,
+  "lastUpdate": 1606790277128,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -881,6 +881,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 783218,
             "range": "± 47661",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "asomers@gmail.com",
+            "name": "Alan Somers",
+            "username": "asomers"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7ae8135b62057be6b1691f04b27eabe285b05efd",
+          "message": "process: fix the process_kill_on_drop.rs test on non-Linux systems (#3203)\n\n\"disown\" is a bash builtin, not part of POSIX sh.",
+          "timestamp": "2020-12-01T10:20:49+09:00",
+          "tree_id": "8b211b0f9807692d77be8a64a4835718355afe7b",
+          "url": "https://github.com/cssivision/tokio/commit/7ae8135b62057be6b1691f04b27eabe285b05efd"
+        },
+        "date": 1606790274988,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6432235,
+            "range": "± 2655502",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6195573,
+            "range": "± 1345994",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5830076,
+            "range": "± 2522453",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 816,
+            "range": "± 149",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 822,
+            "range": "± 129",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 815,
+            "range": "± 70",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 56755,
+            "range": "± 5048",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1086,
+            "range": "± 121",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1100668,
+            "range": "± 165654",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 781815,
+            "range": "± 50219",
             "unit": "ns/iter"
           }
         ]
