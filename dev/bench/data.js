@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607136775299,
+  "lastUpdate": 1607331291484,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1445,6 +1445,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 604701,
             "range": "± 248766",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "def858f007e5803a34d1c98e56837b2c63c29d09",
+          "message": "net: expose poll_* methods on UnixDatagram",
+          "timestamp": "2020-12-07T16:50:42+08:00",
+          "tree_id": "8d85d170f67ff5a6837ce972b8b83b4637ecbf94",
+          "url": "https://github.com/cssivision/tokio/commit/def858f007e5803a34d1c98e56837b2c63c29d09"
+        },
+        "date": 1607331289334,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6517972,
+            "range": "± 2264857",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6344677,
+            "range": "± 1285153",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5705779,
+            "range": "± 1738106",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 587,
+            "range": "± 74",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 602,
+            "range": "± 59",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 595,
+            "range": "± 55",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 36810,
+            "range": "± 2898",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 798,
+            "range": "± 38",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1024884,
+            "range": "± 66507",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 747721,
+            "range": "± 56985",
             "unit": "ns/iter"
           }
         ]
