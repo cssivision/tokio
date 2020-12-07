@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607339887051,
+  "lastUpdate": 1607341241335,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1225,6 +1225,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19925057,
             "range": "± 1776061",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "fb28b6a57d4b798b32a6cbe34a7ac5493ba65a4c",
+          "message": "net: add UnixDatagram readiness and non-blocking ops",
+          "timestamp": "2020-12-07T19:35:17+08:00",
+          "tree_id": "fd5b9916de1e7b2be9d29ed1744c8e4f5d638e66",
+          "url": "https://github.com/cssivision/tokio/commit/fb28b6a57d4b798b32a6cbe34a7ac5493ba65a4c"
+        },
+        "date": 1607341239202,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 194692,
+            "range": "± 30050",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 730578,
+            "range": "± 155873",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5499418,
+            "range": "± 985014",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21880061,
+            "range": "± 3670727",
             "unit": "ns/iter"
           }
         ]
