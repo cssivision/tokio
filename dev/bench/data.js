@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607341267747,
+  "lastUpdate": 1607341274186,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2987,6 +2987,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 782621,
             "range": "± 52066",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "fb28b6a57d4b798b32a6cbe34a7ac5493ba65a4c",
+          "message": "net: add UnixDatagram readiness and non-blocking ops",
+          "timestamp": "2020-12-07T19:35:17+08:00",
+          "tree_id": "fd5b9916de1e7b2be9d29ed1744c8e4f5d638e66",
+          "url": "https://github.com/cssivision/tokio/commit/fb28b6a57d4b798b32a6cbe34a7ac5493ba65a4c"
+        },
+        "date": 1607341267498,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7111757,
+            "range": "± 2930216",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 7075523,
+            "range": "± 2932443",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6178660,
+            "range": "± 2532975",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 906,
+            "range": "± 115",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 916,
+            "range": "± 218",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 871,
+            "range": "± 159",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 65106,
+            "range": "± 15402",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1071,
+            "range": "± 170",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1101168,
+            "range": "± 187742",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 773610,
+            "range": "± 152308",
             "unit": "ns/iter"
           }
         ]
