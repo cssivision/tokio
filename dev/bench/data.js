@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607331291484,
+  "lastUpdate": 1607331295860,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -613,6 +613,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20386779,
             "range": "± 2762939",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "def858f007e5803a34d1c98e56837b2c63c29d09",
+          "message": "net: expose poll_* methods on UnixDatagram",
+          "timestamp": "2020-12-07T16:50:42+08:00",
+          "tree_id": "8d85d170f67ff5a6837ce972b8b83b4637ecbf94",
+          "url": "https://github.com/cssivision/tokio/commit/def858f007e5803a34d1c98e56837b2c63c29d09"
+        },
+        "date": 1607331294299,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 190989,
+            "range": "± 28348",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 717656,
+            "range": "± 139665",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5043512,
+            "range": "± 648181",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 20718380,
+            "range": "± 2788492",
             "unit": "ns/iter"
           }
         ]
