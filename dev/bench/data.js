@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607568351980,
+  "lastUpdate": 1607568366634,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1327,6 +1327,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21880061,
             "range": "± 3670727",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "f7c80bd3d2226540460b52621067ee51c521e41a",
+          "message": "net: UnixDatagram ready method add doc example",
+          "timestamp": "2020-12-10T10:41:56+08:00",
+          "tree_id": "66db822850b8eb2e14293f433cca4a253233939c",
+          "url": "https://github.com/cssivision/tokio/commit/f7c80bd3d2226540460b52621067ee51c521e41a"
+        },
+        "date": 1607568364456,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 169440,
+            "range": "± 29443",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 721292,
+            "range": "± 94201",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5465259,
+            "range": "± 1089228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19197176,
+            "range": "± 2707315",
             "unit": "ns/iter"
           }
         ]
