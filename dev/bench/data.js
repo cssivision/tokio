@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607593006358,
+  "lastUpdate": 1607593013750,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2241,6 +2241,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 792,
             "range": "± 173",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f60860af7edefef5373d50d77ab605d648d60526",
+          "message": "watch: fix spurious wakeup (#3234)\n\nCo-authored-by: @tijsvd",
+          "timestamp": "2020-12-10T09:46:01+01:00",
+          "tree_id": "44bc86bbaa5393a0dc3a94a2066569dcb1b79df1",
+          "url": "https://github.com/cssivision/tokio/commit/f60860af7edefef5373d50d77ab605d648d60526"
+        },
+        "date": 1607593011572,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 16557,
+            "range": "± 4830",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1097,
+            "range": "± 128",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 640,
+            "range": "± 99",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 17408,
+            "range": "± 5452",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1067,
+            "range": "± 136",
             "unit": "ns/iter"
           }
         ]
