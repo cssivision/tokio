@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607616664998,
+  "lastUpdate": 1607616736875,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -3639,6 +3639,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1111,
             "range": "± 142",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e3f2381979a2234bdf16ba7f711ac1f1c2db602d",
+          "message": "Update tokio/src/net/unix/stream.rs\n\nCo-authored-by: Alice Ryhl <alice@ryhl.io>",
+          "timestamp": "2020-12-10T23:48:26+08:00",
+          "tree_id": "3551625fcc2fbe2335e371c960234af3c8698b27",
+          "url": "https://github.com/cssivision/tokio/commit/e3f2381979a2234bdf16ba7f711ac1f1c2db602d"
+        },
+        "date": 1607616734723,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15859,
+            "range": "± 7332",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 982,
+            "range": "± 203",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 591,
+            "range": "± 101",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15950,
+            "range": "± 5571",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1015,
+            "range": "± 136",
             "unit": "ns/iter"
           }
         ]
