@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607568377861,
+  "lastUpdate": 1607592984593,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -755,6 +755,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 505,
             "range": "± 65",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f60860af7edefef5373d50d77ab605d648d60526",
+          "message": "watch: fix spurious wakeup (#3234)\n\nCo-authored-by: @tijsvd",
+          "timestamp": "2020-12-10T09:46:01+01:00",
+          "tree_id": "44bc86bbaa5393a0dc3a94a2066569dcb1b79df1",
+          "url": "https://github.com/cssivision/tokio/commit/f60860af7edefef5373d50d77ab605d648d60526"
+        },
+        "date": 1607592982511,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 843,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 12983,
+            "range": "± 3255",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 871,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 12902,
+            "range": "± 2631",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 493,
+            "range": "± 10",
             "unit": "ns/iter"
           }
         ]
