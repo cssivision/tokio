@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607615548966,
+  "lastUpdate": 1607616026260,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2245,6 +2245,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21035320,
             "range": "± 2688709",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "be8c5221c30747fec106958f5c24363755719194",
+          "message": "Update tokio/src/net/unix/stream.rs\n\nCo-authored-by: Alice Ryhl <alice@ryhl.io>",
+          "timestamp": "2020-12-10T23:48:16+08:00",
+          "tree_id": "40bba2a3b9f7aff105e3d30294191e7c017c5563",
+          "url": "https://github.com/cssivision/tokio/commit/be8c5221c30747fec106958f5c24363755719194"
+        },
+        "date": 1607616025534,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 157505,
+            "range": "± 3267",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 617146,
+            "range": "± 26219",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4595230,
+            "range": "± 609870",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17881865,
+            "range": "± 1859150",
             "unit": "ns/iter"
           }
         ]
