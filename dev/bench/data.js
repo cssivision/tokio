@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607592984593,
+  "lastUpdate": 1607593006358,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -3419,6 +3419,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 794118,
             "range": "± 29943",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "f60860af7edefef5373d50d77ab605d648d60526",
+          "message": "watch: fix spurious wakeup (#3234)\n\nCo-authored-by: @tijsvd",
+          "timestamp": "2020-12-10T09:46:01+01:00",
+          "tree_id": "44bc86bbaa5393a0dc3a94a2066569dcb1b79df1",
+          "url": "https://github.com/cssivision/tokio/commit/f60860af7edefef5373d50d77ab605d648d60526"
+        },
+        "date": 1607592999293,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 5890028,
+            "range": "± 2177925",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6021893,
+            "range": "± 1266811",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5371730,
+            "range": "± 1791058",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 555,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 552,
+            "range": "± 2",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 553,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 31866,
+            "range": "± 2177",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 772,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 953587,
+            "range": "± 2498",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 685523,
+            "range": "± 1305",
             "unit": "ns/iter"
           }
         ]
