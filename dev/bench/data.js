@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607656251230,
+  "lastUpdate": 1607656311243,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -5999,6 +5999,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 788938,
             "range": "± 11332",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "f6dd8a63af284454c875b6a08cf929f07e16ce38",
+          "message": "net: UnixStream fix doc compile",
+          "timestamp": "2020-12-11T11:06:01+08:00",
+          "tree_id": "74faae013ae4dd05abae4e60abf1d5539d11fd3b",
+          "url": "https://github.com/cssivision/tokio/commit/f6dd8a63af284454c875b6a08cf929f07e16ce38"
+        },
+        "date": 1607656309073,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6208366,
+            "range": "± 1954378",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6075252,
+            "range": "± 1355701",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5614945,
+            "range": "± 2553985",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 536,
+            "range": "± 132",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 544,
+            "range": "± 88",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 547,
+            "range": "± 131",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 37128,
+            "range": "± 5070",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 603,
+            "range": "± 155",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 901220,
+            "range": "± 190019",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 653389,
+            "range": "± 115227",
             "unit": "ns/iter"
           }
         ]
