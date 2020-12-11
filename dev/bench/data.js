@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607655525025,
+  "lastUpdate": 1607655537183,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1295,6 +1295,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 592,
             "range": "± 24",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "e1bcaf08c59cb0801591875296b8baf08060f0e7",
+          "message": "net: UnixStream add poll_write_ready/poll_read_ready",
+          "timestamp": "2020-12-11T10:54:46+08:00",
+          "tree_id": "6511e02a7cec353e4fc4578348fbaabd25ff8c98",
+          "url": "https://github.com/cssivision/tokio/commit/e1bcaf08c59cb0801591875296b8baf08060f0e7"
+        },
+        "date": 1607655536470,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 899,
+            "range": "± 147",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15333,
+            "range": "± 5023",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 920,
+            "range": "± 114",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14476,
+            "range": "± 6067",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 529,
+            "range": "± 93",
             "unit": "ns/iter"
           }
         ]
