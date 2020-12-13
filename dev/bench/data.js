@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607870510114,
+  "lastUpdate": 1607870562190,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2707,6 +2707,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 17745587,
             "range": "± 2564093",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d535135cdcfe6a917308e539ebf94bc94f8bf07e",
+          "message": "Add semicolon to continue",
+          "timestamp": "2020-12-13T15:37:25+01:00",
+          "tree_id": "71f10d19362f9b7eb1ee50ae67074306099eb566",
+          "url": "https://github.com/cssivision/tokio/commit/d535135cdcfe6a917308e539ebf94bc94f8bf07e"
+        },
+        "date": 1607870561409,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 157196,
+            "range": "± 3846",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 614812,
+            "range": "± 21393",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4684624,
+            "range": "± 830567",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18119720,
+            "range": "± 2074494",
             "unit": "ns/iter"
           }
         ]
