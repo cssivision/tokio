@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1607656354558,
+  "lastUpdate": 1607870510114,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1403,6 +1403,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 569,
             "range": "± 67",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "alice@ryhl.io",
+            "name": "Alice Ryhl",
+            "username": "Darksonn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "d535135cdcfe6a917308e539ebf94bc94f8bf07e",
+          "message": "Add semicolon to continue",
+          "timestamp": "2020-12-13T15:37:25+01:00",
+          "tree_id": "71f10d19362f9b7eb1ee50ae67074306099eb566",
+          "url": "https://github.com/cssivision/tokio/commit/d535135cdcfe6a917308e539ebf94bc94f8bf07e"
+        },
+        "date": 1607870509405,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 925,
+            "range": "± 128",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 15353,
+            "range": "± 5339",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 955,
+            "range": "± 140",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15393,
+            "range": "± 7235",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 554,
+            "range": "± 96",
             "unit": "ns/iter"
           }
         ]
