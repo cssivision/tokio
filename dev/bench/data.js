@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1608561077117,
+  "lastUpdate": 1608705441458,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2857,6 +2857,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21057148,
             "range": "± 3343759",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0deaeb84948f253b76b7fe64d7fe9d4527cd4275",
+          "message": "chore: remove unused `slab` dependency (#3318)",
+          "timestamp": "2020-12-22T21:56:22-08:00",
+          "tree_id": "3b9ad84403d71b2ad5d2c749c23516c3dfaec3ce",
+          "url": "https://github.com/cssivision/tokio/commit/0deaeb84948f253b76b7fe64d7fe9d4527cd4275"
+        },
+        "date": 1608705440649,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 155649,
+            "range": "± 4041",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 615802,
+            "range": "± 14213",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4762666,
+            "range": "± 509379",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18560965,
+            "range": "± 1904991",
             "unit": "ns/iter"
           }
         ]
