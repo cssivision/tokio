@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609065718309,
+  "lastUpdate": 1609065731114,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1619,6 +1619,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 568,
             "range": "± 106",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "a78f371759d8b9eae7fc799e7ed74456ccf7d7a0",
+          "message": "net: Add try_read_buf and try_recv_buf",
+          "timestamp": "2020-12-27T18:37:45+08:00",
+          "tree_id": "0a6ec5ed64e2b6776a535f5d04680dcca0b5953c",
+          "url": "https://github.com/cssivision/tokio/commit/a78f371759d8b9eae7fc799e7ed74456ccf7d7a0"
+        },
+        "date": 1609065729001,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 733,
+            "range": "± 122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14678,
+            "range": "± 8080",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 748,
+            "range": "± 60",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 12760,
+            "range": "± 4464",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 470,
+            "range": "± 97",
             "unit": "ns/iter"
           }
         ]
