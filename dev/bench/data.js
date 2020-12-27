@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609066948823,
+  "lastUpdate": 1609067014315,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -4887,6 +4887,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 983,
             "range": "± 225",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "1a3fccee46e8abacd32376d5bbc7698f5cc31df6",
+          "message": "net: Add try_read_buf and try_recv_buf enable in io-util features",
+          "timestamp": "2020-12-27T18:58:01+08:00",
+          "tree_id": "76d754841fc4fab30808763f86066e247b9430f1",
+          "url": "https://github.com/cssivision/tokio/commit/1a3fccee46e8abacd32376d5bbc7698f5cc31df6"
+        },
+        "date": 1609067013641,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 13464,
+            "range": "± 2934",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 909,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 541,
+            "range": "± 15",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 13839,
+            "range": "± 2695",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 909,
+            "range": "± 13",
             "unit": "ns/iter"
           }
         ]
