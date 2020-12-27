@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609066939246,
+  "lastUpdate": 1609066948823,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -3217,6 +3217,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20802614,
             "range": "± 2436012",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "1a3fccee46e8abacd32376d5bbc7698f5cc31df6",
+          "message": "net: Add try_read_buf and try_recv_buf enable in io-util features",
+          "timestamp": "2020-12-27T18:58:01+08:00",
+          "tree_id": "76d754841fc4fab30808763f86066e247b9430f1",
+          "url": "https://github.com/cssivision/tokio/commit/1a3fccee46e8abacd32376d5bbc7698f5cc31df6"
+        },
+        "date": 1609066948183,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 156253,
+            "range": "± 4797",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 620656,
+            "range": "± 24151",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5036883,
+            "range": "± 633627",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17398635,
+            "range": "± 2265670",
             "unit": "ns/iter"
           }
         ]
