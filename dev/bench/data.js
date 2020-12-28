@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609068467944,
+  "lastUpdate": 1609123230503,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1835,6 +1835,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 588,
             "range": "± 44",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "5c5e7f1c3cb0a4379d9dcd5faaf6561331c5aed5",
+          "message": "Update tokio/src/net/tcp/stream.rs\n\nCo-authored-by: Alice Ryhl <alice@ryhl.io>",
+          "timestamp": "2020-12-28T10:36:39+08:00",
+          "tree_id": "918d9c906603b18d6d2f37f0c2aed89014ae9a2e",
+          "url": "https://github.com/cssivision/tokio/commit/5c5e7f1c3cb0a4379d9dcd5faaf6561331c5aed5"
+        },
+        "date": 1609123229839,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 776,
+            "range": "± 36",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 11920,
+            "range": "± 2376",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 767,
+            "range": "± 12",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 12060,
+            "range": "± 3004",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 434,
+            "range": "± 9",
             "unit": "ns/iter"
           }
         ]
