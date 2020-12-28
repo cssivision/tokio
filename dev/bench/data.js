@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609123258503,
+  "lastUpdate": 1609124000852,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1889,6 +1889,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 434,
             "range": "± 9",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "17d9c7bc6453544f84ffdf5ad2891c263b9d4e07",
+          "message": "fix doc",
+          "timestamp": "2020-12-28T10:52:34+08:00",
+          "tree_id": "98ebb0518e7835df51147079a9304bbe810e89a8",
+          "url": "https://github.com/cssivision/tokio/commit/17d9c7bc6453544f84ffdf5ad2891c263b9d4e07"
+        },
+        "date": 1609124000173,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 844,
+            "range": "± 4",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 12796,
+            "range": "± 2476",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 865,
+            "range": "± 6",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13269,
+            "range": "± 3434",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 492,
+            "range": "± 7",
             "unit": "ns/iter"
           }
         ]
