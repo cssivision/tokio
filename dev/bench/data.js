@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609224970943,
+  "lastUpdate": 1609224977797,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -5667,6 +5667,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1089,
             "range": "± 130",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "f22bab3f1042598684975080cd3a24fe30a7ef3e",
+          "message": "remove capcacity check",
+          "timestamp": "2020-12-29T14:52:53+08:00",
+          "tree_id": "f37f7dc44770ba4591cef8e64416b920af64bf36",
+          "url": "https://github.com/cssivision/tokio/commit/f22bab3f1042598684975080cd3a24fe30a7ef3e"
+        },
+        "date": 1609224977074,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 14002,
+            "range": "± 3033",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 915,
+            "range": "± 5",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 539,
+            "range": "± 24",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 14147,
+            "range": "± 2818",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 912,
+            "range": "± 5",
             "unit": "ns/iter"
           }
         ]
