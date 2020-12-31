@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609387702203,
+  "lastUpdate": 1609387707188,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -1997,6 +1997,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 529,
             "range": "± 124",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "bd71dbeffcadd6a0bac0bbbcbe63f0bf2a2943a7",
+          "message": "check uds_stream it is no longer readable",
+          "timestamp": "2020-12-31T12:04:47+08:00",
+          "tree_id": "e6f14f60859d21e6082c069cceeadd5786742bac",
+          "url": "https://github.com/cssivision/tokio/commit/bd71dbeffcadd6a0bac0bbbcbe63f0bf2a2943a7"
+        },
+        "date": 1609387703181,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 935,
+            "range": "± 46",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 13802,
+            "range": "± 3522",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 886,
+            "range": "± 192",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 13957,
+            "range": "± 4397",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 544,
+            "range": "± 37",
             "unit": "ns/iter"
           }
         ]
