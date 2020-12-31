@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1609387707188,
+  "lastUpdate": 1609387725680,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -5823,6 +5823,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 912,
             "range": "± 5",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "bd71dbeffcadd6a0bac0bbbcbe63f0bf2a2943a7",
+          "message": "check uds_stream it is no longer readable",
+          "timestamp": "2020-12-31T12:04:47+08:00",
+          "tree_id": "e6f14f60859d21e6082c069cceeadd5786742bac",
+          "url": "https://github.com/cssivision/tokio/commit/bd71dbeffcadd6a0bac0bbbcbe63f0bf2a2943a7"
+        },
+        "date": 1609387724958,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15718,
+            "range": "± 6144",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1094,
+            "range": "± 28",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 654,
+            "range": "± 117",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15944,
+            "range": "± 5214",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1081,
+            "range": "± 59",
             "unit": "ns/iter"
           }
         ]
