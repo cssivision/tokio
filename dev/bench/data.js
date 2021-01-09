@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610194028674,
+  "lastUpdate": 1610194034651,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2105,6 +2105,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 588,
             "range": "± 36",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cdart@anduril.com",
+            "name": "Cameron",
+            "username": "SkamDart"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "22c27b9282da399574bf9d58461fe0f1869be894",
+          "message": "task: wake LocalSet on spawn_local (#3369)",
+          "timestamp": "2021-01-09T11:46:51+01:00",
+          "tree_id": "fea07ef93e77faf10bd1c08598dd1157ce9e72e5",
+          "url": "https://github.com/cssivision/tokio/commit/22c27b9282da399574bf9d58461fe0f1869be894"
+        },
+        "date": 1610194033931,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 966,
+            "range": "± 58",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14534,
+            "range": "± 4869",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1016,
+            "range": "± 91",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 14983,
+            "range": "± 3810",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 574,
+            "range": "± 56",
             "unit": "ns/iter"
           }
         ]
