@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610194067163,
+  "lastUpdate": 1610194572874,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -4081,6 +4081,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18670864,
             "range": "± 2136461",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "6971d656734b3d0145067622f744f70f936d8682",
+          "message": "docs: test-util feature doesn't enabled with full",
+          "timestamp": "2021-01-09T20:05:49+08:00",
+          "tree_id": "3ff2c0507f86f3ecc1f5387b95318634bcd5fd12",
+          "url": "https://github.com/cssivision/tokio/commit/6971d656734b3d0145067622f744f70f936d8682"
+        },
+        "date": 1610194572091,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 192592,
+            "range": "± 48857",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 741183,
+            "range": "± 82511",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5545554,
+            "range": "± 980495",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21085171,
+            "range": "± 2424403",
             "unit": "ns/iter"
           }
         ]
