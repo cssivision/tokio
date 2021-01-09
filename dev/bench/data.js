@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610194034651,
+  "lastUpdate": 1610194039869,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -4033,6 +4033,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20139583,
             "range": "± 2702195",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cdart@anduril.com",
+            "name": "Cameron",
+            "username": "SkamDart"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "22c27b9282da399574bf9d58461fe0f1869be894",
+          "message": "task: wake LocalSet on spawn_local (#3369)",
+          "timestamp": "2021-01-09T11:46:51+01:00",
+          "tree_id": "fea07ef93e77faf10bd1c08598dd1157ce9e72e5",
+          "url": "https://github.com/cssivision/tokio/commit/22c27b9282da399574bf9d58461fe0f1869be894"
+        },
+        "date": 1610194031806,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 177665,
+            "range": "± 30216",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 679360,
+            "range": "± 169387",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5062786,
+            "range": "± 1387467",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18670864,
+            "range": "± 2136461",
             "unit": "ns/iter"
           }
         ]
