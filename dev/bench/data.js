@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1610194632167,
+  "lastUpdate": 1610194643647,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2159,6 +2159,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 574,
             "range": "± 56",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "6971d656734b3d0145067622f744f70f936d8682",
+          "message": "docs: test-util feature doesn't enabled with full",
+          "timestamp": "2021-01-09T20:05:49+08:00",
+          "tree_id": "3ff2c0507f86f3ecc1f5387b95318634bcd5fd12",
+          "url": "https://github.com/cssivision/tokio/commit/6971d656734b3d0145067622f744f70f936d8682"
+        },
+        "date": 1610194640003,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 894,
+            "range": "± 209",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 16402,
+            "range": "± 5330",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 945,
+            "range": "± 180",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 15747,
+            "range": "± 5373",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 555,
+            "range": "± 144",
             "unit": "ns/iter"
           }
         ]
