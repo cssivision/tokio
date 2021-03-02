@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614658035255,
+  "lastUpdate": 1614658040409,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -4543,6 +4543,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20685648,
             "range": "± 2544673",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "guswynn@gmail.com",
+            "name": "Gus Wynn",
+            "username": "guswynn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0d838bf5ade7509e622559458a367cca65133f06",
+          "message": "io: fix link to std src in util (#3568)\n\nThe big move or 'src' in rust-lang caused this link to be broken",
+          "timestamp": "2021-03-02T02:50:13+09:00",
+          "tree_id": "4aebe568d0e20a57cf746664f172704157738a06",
+          "url": "https://github.com/cssivision/tokio/commit/0d838bf5ade7509e622559458a367cca65133f06"
+        },
+        "date": 1614658039380,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 195163,
+            "range": "± 42637",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 697550,
+            "range": "± 203458",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4743227,
+            "range": "± 1081007",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 18915392,
+            "range": "± 2062974",
             "unit": "ns/iter"
           }
         ]
