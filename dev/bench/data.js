@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1614658040409,
+  "lastUpdate": 1614658066222,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -10667,6 +10667,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 709918,
             "range": "± 86872",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "guswynn@gmail.com",
+            "name": "Gus Wynn",
+            "username": "guswynn"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0d838bf5ade7509e622559458a367cca65133f06",
+          "message": "io: fix link to std src in util (#3568)\n\nThe big move or 'src' in rust-lang caused this link to be broken",
+          "timestamp": "2021-03-02T02:50:13+09:00",
+          "tree_id": "4aebe568d0e20a57cf746664f172704157738a06",
+          "url": "https://github.com/cssivision/tokio/commit/0d838bf5ade7509e622559458a367cca65133f06"
+        },
+        "date": 1614658065490,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6880895,
+            "range": "± 2915433",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6589367,
+            "range": "± 2046714",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 6236873,
+            "range": "± 3342884",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 827,
+            "range": "± 122",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 816,
+            "range": "± 193",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 829,
+            "range": "± 216",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 132973,
+            "range": "± 15779",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1732,
+            "range": "± 257",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1086894,
+            "range": "± 164549",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 724492,
+            "range": "± 125598",
             "unit": "ns/iter"
           }
         ]
