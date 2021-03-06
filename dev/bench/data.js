@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615040034345,
+  "lastUpdate": 1615040036380,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -4747,6 +4747,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 19614179,
             "range": "± 3238775",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "6e911531683f2cc35d2edbaa51a45687130d21e7",
+          "message": "remove ds store",
+          "timestamp": "2021-03-06T22:09:13+08:00",
+          "tree_id": "8f9f4d2a36e63e65ea456f0494d69cc6d2354187",
+          "url": "https://github.com/cssivision/tokio/commit/6e911531683f2cc35d2edbaa51a45687130d21e7"
+        },
+        "date": 1615040033793,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 185530,
+            "range": "± 45745",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 694332,
+            "range": "± 144601",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4241622,
+            "range": "± 541010",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19142164,
+            "range": "± 1874434",
             "unit": "ns/iter"
           }
         ]
