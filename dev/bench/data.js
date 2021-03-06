@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615037883117,
+  "lastUpdate": 1615037885867,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -4645,6 +4645,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 18915392,
             "range": "± 2062974",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "constantin.nickel@gmail.com",
+            "name": "nickelc",
+            "username": "nickelc"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "704de8c01b331c2651c0cdb0d5ec6b0657e14344",
+          "message": "stream: remove duplicate `doc(test(..))` & `cfg_attr` declarations (#3571)",
+          "timestamp": "2021-03-06T20:54:28+09:00",
+          "tree_id": "05cfb9504112210a7d4e372c30c16177aee4ee59",
+          "url": "https://github.com/cssivision/tokio/commit/704de8c01b331c2651c0cdb0d5ec6b0657e14344"
+        },
+        "date": 1615037885166,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 182978,
+            "range": "± 29461",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 687538,
+            "range": "± 93986",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5196624,
+            "range": "± 1463127",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19614179,
+            "range": "± 3238775",
             "unit": "ns/iter"
           }
         ]
