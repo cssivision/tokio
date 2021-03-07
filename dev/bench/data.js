@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615085155209,
+  "lastUpdate": 1615085158969,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -11627,6 +11627,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 811832,
             "range": "± 110639",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "58e861a40b0441b6be13bf49911df1535e2d9e42",
+          "message": "fix clippy",
+          "timestamp": "2021-03-07T10:43:34+08:00",
+          "tree_id": "49374ac82db5542c7b12c963c80befd2ff4c2b44",
+          "url": "https://github.com/cssivision/tokio/commit/58e861a40b0441b6be13bf49911df1535e2d9e42"
+        },
+        "date": 1615085158304,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 6128378,
+            "range": "± 2136242",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5728411,
+            "range": "± 2260102",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5903635,
+            "range": "± 3168539",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 814,
+            "range": "± 151",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 804,
+            "range": "± 139",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 834,
+            "range": "± 109",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 118414,
+            "range": "± 25660",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1628,
+            "range": "± 313",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 965275,
+            "range": "± 97025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 699245,
+            "range": "± 94982",
             "unit": "ns/iter"
           }
         ]
