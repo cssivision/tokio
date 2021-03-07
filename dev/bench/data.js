@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615085158969,
+  "lastUpdate": 1615087195178,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -4999,6 +4999,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 21785948,
             "range": "± 3648194",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "4530f78a47c0ecac4afae50073b8f8bf2f57fe6a",
+          "message": "fix clippy -D warnings",
+          "timestamp": "2021-03-07T11:17:56+08:00",
+          "tree_id": "fae3afb40e05f898534054f82b9affea62295226",
+          "url": "https://github.com/cssivision/tokio/commit/4530f78a47c0ecac4afae50073b8f8bf2f57fe6a"
+        },
+        "date": 1615087194377,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 166278,
+            "range": "± 25951",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 603660,
+            "range": "± 176992",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4259115,
+            "range": "± 868308",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 17516100,
+            "range": "± 3056073",
             "unit": "ns/iter"
           }
         ]
