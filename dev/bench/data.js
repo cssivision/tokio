@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1615342291774,
+  "lastUpdate": 1615342302740,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -7797,6 +7797,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1032,
             "range": "± 243",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "1f9e97ad4c9e2620712a5806c9be3b61fc09884e",
+          "message": "fix clippy",
+          "timestamp": "2021-03-10T10:12:44+08:00",
+          "tree_id": "9b62d0d24e0eecba6115f0f6b5ca39b79125f105",
+          "url": "https://github.com/cssivision/tokio/commit/1f9e97ad4c9e2620712a5806c9be3b61fc09884e"
+        },
+        "date": 1615342301628,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 15470,
+            "range": "± 5540",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 1097,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 655,
+            "range": "± 10",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15635,
+            "range": "± 5961",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 1119,
+            "range": "± 7",
             "unit": "ns/iter"
           }
         ]
