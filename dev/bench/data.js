@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619068969649,
+  "lastUpdate": 1619068974044,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -2915,6 +2915,60 @@ window.BENCHMARK_DATA = {
             "name": "read_uncontended",
             "value": 598,
             "range": "± 139",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "570a349ad7b7dadeb2cb45e558a2cc818eafc494",
+          "message": "io: CopyBuffer should keep reading when there's space in the buffer",
+          "timestamp": "2021-04-22T13:20:58+08:00",
+          "tree_id": "b5975cae54f10c645d38b25ce3bac75e1f0086af",
+          "url": "https://github.com/cssivision/tokio/commit/570a349ad7b7dadeb2cb45e558a2cc818eafc494"
+        },
+        "date": 1619068966527,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "read_concurrent_contended",
+            "value": 1058,
+            "range": "± 82",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_contended_multi",
+            "value": 14943,
+            "range": "± 4679",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended",
+            "value": 1067,
+            "range": "± 7",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_concurrent_uncontended_multi",
+            "value": 17022,
+            "range": "± 6907",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "read_uncontended",
+            "value": 591,
+            "range": "± 46",
             "unit": "ns/iter"
           }
         ]
