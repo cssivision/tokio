@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1616921465397,
+  "lastUpdate": 1619064375349,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -5305,6 +5305,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 22191965,
             "range": "± 3838249",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2b9b55810847b4c7855e3de82f432ca997600f30",
+          "message": "time: prevent `time::advance` from going too far (#3712)\n\nPreviously, `time::advance` would set the mocked clock forward the\r\nrequested amount, then yield. However, if there was no work ready to\r\nperform immediately, this would result in advancing to the next expiring\r\nsleep.\r\n\r\nNow, `time::advance(...)` will unblock at the requested time. The\r\ndifference between `time::advance(...)` and `time::sleep(...)` is a bit\r\nfuzzy. The main difference is `time::sleep(...)` operates on the current\r\ntask and `time::advance(...)` operates at the runtime level.\r\n\r\nFixes #3710",
+          "timestamp": "2021-04-21T15:23:35-07:00",
+          "tree_id": "6e5d0c6d86afdeaee3700f2851df5e78bfe7f8a4",
+          "url": "https://github.com/cssivision/tokio/commit/2b9b55810847b4c7855e3de82f432ca997600f30"
+        },
+        "date": 1619064374179,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 191202,
+            "range": "± 14328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 711947,
+            "range": "± 62697",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 5251141,
+            "range": "± 1040623",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 21733643,
+            "range": "± 4745032",
             "unit": "ns/iter"
           }
         ]
