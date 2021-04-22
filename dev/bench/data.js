@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619064379080,
+  "lastUpdate": 1619064396745,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -12533,6 +12533,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 727146,
             "range": "± 86725",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "me@carllerche.com",
+            "name": "Carl Lerche",
+            "username": "carllerche"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2b9b55810847b4c7855e3de82f432ca997600f30",
+          "message": "time: prevent `time::advance` from going too far (#3712)\n\nPreviously, `time::advance` would set the mocked clock forward the\r\nrequested amount, then yield. However, if there was no work ready to\r\nperform immediately, this would result in advancing to the next expiring\r\nsleep.\r\n\r\nNow, `time::advance(...)` will unblock at the requested time. The\r\ndifference between `time::advance(...)` and `time::sleep(...)` is a bit\r\nfuzzy. The main difference is `time::sleep(...)` operates on the current\r\ntask and `time::advance(...)` operates at the runtime level.\r\n\r\nFixes #3710",
+          "timestamp": "2021-04-21T15:23:35-07:00",
+          "tree_id": "6e5d0c6d86afdeaee3700f2851df5e78bfe7f8a4",
+          "url": "https://github.com/cssivision/tokio/commit/2b9b55810847b4c7855e3de82f432ca997600f30"
+        },
+        "date": 1619064396098,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 7168557,
+            "range": "± 3789466",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 6443977,
+            "range": "± 1740228",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5773043,
+            "range": "± 3248947",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 845,
+            "range": "± 179",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 839,
+            "range": "± 229",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 870,
+            "range": "± 490",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 129889,
+            "range": "± 8829",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1719,
+            "range": "± 159",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 1128694,
+            "range": "± 127556",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 785791,
+            "range": "± 118269",
             "unit": "ns/iter"
           }
         ]
