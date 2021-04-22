@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619068974044,
+  "lastUpdate": 1619068977540,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -5563,6 +5563,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20550600,
             "range": "± 3971591",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "570a349ad7b7dadeb2cb45e558a2cc818eafc494",
+          "message": "io: CopyBuffer should keep reading when there's space in the buffer",
+          "timestamp": "2021-04-22T13:20:58+08:00",
+          "tree_id": "b5975cae54f10c645d38b25ce3bac75e1f0086af",
+          "url": "https://github.com/cssivision/tokio/commit/570a349ad7b7dadeb2cb45e558a2cc818eafc494"
+        },
+        "date": 1619068976077,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 194850,
+            "range": "± 66328",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 703523,
+            "range": "± 187799",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4469264,
+            "range": "± 945543",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19284725,
+            "range": "± 3176618",
             "unit": "ns/iter"
           }
         ]
