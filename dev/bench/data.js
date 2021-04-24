@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1619254596854,
+  "lastUpdate": 1619254614462,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -13307,6 +13307,90 @@ window.BENCHMARK_DATA = {
             "name": "uncontented_unbounded",
             "value": 697501,
             "range": "± 13523",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "committer": {
+            "email": "cssivision@gmail.com",
+            "name": "cssivision",
+            "username": "cssivision"
+          },
+          "distinct": true,
+          "id": "bf8bebf0d11476e49699ad24986cf1f9cda20ed3",
+          "message": "io: CopyBuffer should keep reading when there's space in the buffer",
+          "timestamp": "2021-04-24T16:54:07+08:00",
+          "tree_id": "77b61bef917135470e66d76c68e6d304d20e117b",
+          "url": "https://github.com/cssivision/tokio/commit/bf8bebf0d11476e49699ad24986cf1f9cda20ed3"
+        },
+        "date": 1619254613830,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contention_bounded",
+            "value": 5790475,
+            "range": "± 2567253",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_bounded_full",
+            "value": 5728935,
+            "range": "± 2124668",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contention_unbounded",
+            "value": 5248051,
+            "range": "± 2352139",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_000_medium",
+            "value": 705,
+            "range": "± 112",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_100_medium",
+            "value": 689,
+            "range": "± 95",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "create_1_medium",
+            "value": 674,
+            "range": "± 169",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_large",
+            "value": 123523,
+            "range": "± 14719",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "send_medium",
+            "value": 1477,
+            "range": "± 274",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_bounded",
+            "value": 899861,
+            "range": "± 250088",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontented_unbounded",
+            "value": 597369,
+            "range": "± 99905",
             "unit": "ns/iter"
           }
         ]
