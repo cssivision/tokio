@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625561108291,
+  "lastUpdate": 1625561115063,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -5767,6 +5767,54 @@ window.BENCHMARK_DATA = {
             "name": "yield_many",
             "value": 20051596,
             "range": "± 4670634",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jqnk124@gmail.com",
+            "name": "oiovoyo",
+            "username": "oiovoyo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2e7de1ae1d4efb6d0fc6053a1fa22c1e0f91cc52",
+          "message": "stream: modify HashMap to StreamMap in example. (#3925)",
+          "timestamp": "2021-07-05T16:10:55+02:00",
+          "tree_id": "efa2505d00907a0238d18a47d9f00a585a163c9f",
+          "url": "https://github.com/cssivision/tokio/commit/2e7de1ae1d4efb6d0fc6053a1fa22c1e0f91cc52"
+        },
+        "date": 1625561114331,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "chained_spawn",
+            "value": 168433,
+            "range": "± 24941",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "ping_pong",
+            "value": 604164,
+            "range": "± 82616",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "spawn_many",
+            "value": 4912554,
+            "range": "± 830765",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "yield_many",
+            "value": 19187055,
+            "range": "± 4101067",
             "unit": "ns/iter"
           }
         ]
