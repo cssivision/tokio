@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1625561115063,
+  "lastUpdate": 1625561128990,
   "repoUrl": "https://github.com/cssivision/tokio",
   "entries": {
     "sync_rwlock": [
@@ -8787,6 +8787,60 @@ window.BENCHMARK_DATA = {
             "name": "uncontended_concurrent_single",
             "value": 1091,
             "range": "± 48",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "jqnk124@gmail.com",
+            "name": "oiovoyo",
+            "username": "oiovoyo"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2e7de1ae1d4efb6d0fc6053a1fa22c1e0f91cc52",
+          "message": "stream: modify HashMap to StreamMap in example. (#3925)",
+          "timestamp": "2021-07-05T16:10:55+02:00",
+          "tree_id": "efa2505d00907a0238d18a47d9f00a585a163c9f",
+          "url": "https://github.com/cssivision/tokio/commit/2e7de1ae1d4efb6d0fc6053a1fa22c1e0f91cc52"
+        },
+        "date": 1625561127851,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "contended_concurrent_multi",
+            "value": 16581,
+            "range": "± 8263",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "contended_concurrent_single",
+            "value": 812,
+            "range": "± 143",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended",
+            "value": 522,
+            "range": "± 77",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_multi",
+            "value": 15496,
+            "range": "± 8546",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "uncontended_concurrent_single",
+            "value": 823,
+            "range": "± 189",
             "unit": "ns/iter"
           }
         ]
